@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+</head>
+<body>
+    <header>
+<nav>
+    <div class="logo">PORTFO<span>LIO</span></div>
+    <div class="menu">        <a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#skills">SKILLS</a>
+<a href="#projects">PROJECTS</a>
+<a href="#contact">CONTACTS</a>
+    </div>
+</nav>
+<div class="text">
+    <p>Hola,I am</p>
+    <h1>Mohit Sharma</h1>
+    <p>And I am a <span id="ani" style="color:brown;"></span></p>
+    <button class="c-btn">Hire me</button>
+</div>
+</header>
+<section id="section-nav">
+   <img src="../portfolio/img/download__1_-removebg-preview.png" id="menubar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACTS</a>
+</section>
+    <section id="about">
+        <div class="section-info">
+            <h1>About</h1>
+            <p>Who I Am ?</p>
+         </div>
+         <div class="about-row">
+<div class="about-left-col">
+    <img  src="../portfolio/img/Pic-removebg-preview.jpg" >
+</div>
+<div class="about-right-col">
+    <p id="title">Hii,myself Mohit Sharma </p>
+    <p>and i am a young tech enthusiast who has started exploring the different fields.
+        I am currently learning frontend development and i wish to implement 
+        my skills in real world projects.
+        Along with Development part i have started working on DSA 
+        in order to start with CP i am just a newbie who has heard of CP but 
+        trying to get well versed with its game</p>
+      <button class="c-btn">DOWNLOAD CV</button>
+    </div>
+
+         </div>
+    </section>
+    <section id="skills">
+        <div class="section-info">
+            <h1>Skills</h1>
+            <p>Learning and Updating each day</p>
+         </div>
+<div class="skill-row">
+<div class="skill-left-col">
+    <p>In everyday life, the development of life skills helps 
+    students to: Find new ways of thinking and problem solving. Recognise the impact of th
+    eir actions and teaches them to take responsibility for what they do rather than blame others
+    . Build confidence both in spoken skills and for group collaboration and cooperation</p>
+     <button class="c-btn">READ MORE</button>
+</div>
+<div class="skill-right-col">
+<div class="progress-div">
+    <p>
+    <span>HTML</span><br>
+    <progress value="80" max="100"></progress>
+    <span>80%</span>
+    </p>
+    <p>
+        <span>CSS</span><br>
+        <progress value="80" max="100"></progress>
+        <span>60%</span>
+        </p>
+        <p>
+            <span>JS</span><br>
+            <progress value="80" max="100"></progress>
+            <span>30%</span>
+            </p>
+            <p>
+                <span>JAVA</span><br>
+                <progress value="80" max="100"></progress>
+                <span>50%</span>
+                </p>
+                <p>
+                    <span>C++</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>50%</span>
+                    </p>
+</div>
+
+</div>
+</div>
+
+    </section>
+    <section id="projects">
+        <div class="section-info">
+            <h1>Projects</h1>
+            <p>Courses and Achivements</p>
+<div class="projects-row">
+    <div class="projects-box" data-tilt>
+        <img src="../portfolio/img/web.jpg" >
+    <h2>Web Development</h2>
+    </div>
+    <div class="projects-box" data-tilt="">
+        <img src="../portfolio/img/iot.jpg" >
+    <h2>Cloud Computing & Cyber Security</h2>
+    </div>
+    <div class="projects-box" data-tilt="">
+        <img src="../portfolio/img/ds.jpg" >
+    <h2>Data Structure and Algorthims</h2>
+    </div>
+    <div class="projects-box"data-tilt>
+        <img src="../portfolio/img/cp.jpg" >
+    <h2>Competitive Programming</h2>
+    </div>
+
+</div>
+    </section>
+    <section id ="contact">
+        <div class="section-info" style="color: white;">
+            <h1>Get In Touch</h1>
+            <p style="color: black;">Feel free to Contact</p>
+            <div class="contact-row">
+                <div class="contact-lcolumn">
+                    <img src="../portfolio/img/alison-wang-mou0S7ViElQ-unsplash-removebg-preview.png" >
+                </div>
+                <div class="contact-rcolumn">
+                   <h2>Connect with me</h2>
+                    <form >
+                <input type="text" name="" placeholder="Name">
+                <input type="email"name=""placeholder="E-mail">
+                <br>
+                <textarea   cols="40" rows="10"placeholder="Message"></textarea>
+                <br>
+                <button class="c-btn">Submit</button>        
+                    </form>
+                </div>
+            </div>
+    </section>
+    <section id="footer">
+        <h2>Developed By <br>Mohit Sharma</h2>
+         <a href="linkedin.com/in/mohit-sharma-100879200">Linkedin</a>
+        <img src="../portfolio/img/images.png" style="size: 100px;">
+    </section>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+jQuery(document).ready(function(){
+    $('header').ripples({
+  dropRadius: 20,
+  perturbance: 0.03,
+  ...
+});
+}
+</script>
+
+<script>
+    let animate=new Typed('#ani',{
+       strings:["Frontend Developer"],
+       typeSpeed:100,
+       backSpeed:100,
+       loop:true,
+    })
+    </script>
+<script type="text/javascript">
+    var menu=document.getElementById("menubar");
+    var section-nav=document.getElementById("section-nav");
+    section-nav.style.width="0px";
+    menu.onclick=function(){
+        if(section-nav.width=="0px"){
+            section-nav.style.width=250px;
+        }
+        else
+        {
+            section-nav.style.width=0px;
+        }
+    }
+    
+    </script>
+
+
+
+</body>
+</html>
